@@ -6,6 +6,23 @@
 */
 
 Console.WriteLine("Введите пятизначное число ");
+string? N = Console.ReadLine();
+
+string[] Array = new string [5];
+
+
+
+if(Array[0]==Array[4] && Array[1]==Array[3])
+{
+    Console.WriteLine("Да");
+}
+else
+{
+    Console.WriteLine("Нет");
+}
+
+/*
+Console.WriteLine("Введите пятизначное число ");
 int num = Convert.ToInt32(Console.ReadLine());
 
 string array = num.ToString();
@@ -23,3 +40,4 @@ else
 {
     Console.WriteLine("Нет");
 }
+*/

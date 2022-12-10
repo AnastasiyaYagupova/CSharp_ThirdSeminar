@@ -6,11 +6,17 @@
 */
 
 Console.WriteLine("Введите пятизначное число ");
-string? N = Console.ReadLine();
+int N = Convert.ToInt32(Console.ReadLine());
 
-string[] Array = new string [5];
+int [] Array = new int [5];
 
-
+int i = Array.Length;
+while(N > 0)
+{
+    Array[i-1]= N % 10; 
+    N= N / 10;  
+    i--;
+}
 
 if(Array[0]==Array[4] && Array[1]==Array[3])
 {

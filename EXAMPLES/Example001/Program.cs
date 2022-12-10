@@ -10,13 +10,14 @@ int N = Convert.ToInt32(Console.ReadLine());
 
 int [] Array = new int [5];
 
-int i = Array.Length;
-while(N > 0)
-{
-    Array[i-1]= N % 10; 
-    N= N / 10;  
-    i--;
-}
+int Length = Array.Length;
+    int i = Length;
+        while(N > 0)
+        {
+            Array[i-1] = N % 10; 
+            N = N / 10;  
+            i--;
+        }
 
 if(Array[0]==Array[4] && Array[1]==Array[3])
 {
@@ -28,6 +29,56 @@ else
 }
 
 /*
+int [] Array = new int [5];
+int [] TurnOverArray = new int [5];
+
+void FillArray(int[] Collection)
+{
+    int Length = Collection.Length;
+    int i = Length;
+        while(N > 0)
+        {
+            Collection[i-1] = N % 10; 
+            N = N / 10;  
+            i--;
+        }
+}
+
+void SecFillArray(int[] Collection)
+{
+   int Length = Collection.Length;
+    int i = 0;
+        while(N > 0)
+        {
+            Collection[i] = N % 10; 
+            N = N / 10;  
+            i++;
+        } 
+}
+void PrintArray(int[] collection)
+{
+    int Length = collection.Length;
+    int index = 0;  
+    for(index = 0; index < Length; index++)
+    {
+        Console.WriteLine(collection[index]); 
+    }
+}
+
+FillArray(Array);
+SecFillArray(Array);
+
+PrintArray(Array);
+PrintArray(TurnOverArray);
+*/
+
+
+
+
+
+
+/*
+ПРЕДЫДУЩЕЕ РЕШЕНИЕ
 Console.WriteLine("Введите пятизначное число ");
 int num = Convert.ToInt32(Console.ReadLine());
 

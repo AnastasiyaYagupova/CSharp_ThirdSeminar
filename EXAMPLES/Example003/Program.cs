@@ -23,10 +23,11 @@ void FillArray(int[] collection)
 void PrintArray(int[] collection)
 {
     int Length = collection.Length;
-    int index = 0;  // как ввести int в цикл for?
-    for(index = 0; index < Length; index++)
+    int index = 0;  
+     while(index < Length)
     {
-        Console.WriteLine(collection[index]); // попробуй сделать более красиво
+        Console.WriteLine(collection[index]);
+        index++;
     }
 }
 
